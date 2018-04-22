@@ -31,14 +31,16 @@
               <img src="img/search.svg" alt="Loupe" width="25" height="25">
             </button>
           </div>
-          <ul class="page-header__lang-list">
-            <li class="page-header__lang page-header__lang--ru page-header__lang--active" tabindex="0">
+          <div class="page-header__lang-wrap">
+            <div class="page-header__lang page-header__lang--ru page-header__lang--active" tabindex="0">
               <span class="visually-hidden">Русский</span>
-            </li>
-            <li class="page-header__lang page-header__lang--en" tabindex="0">
-              <span class="visually-hidden">English</span>
-            </li>
-          </ul>
+            </div>
+            <ul class="page-header__lang-list">
+              <li class="page-header__lang page-header__lang--en" tabindex="0">
+                <span class="visually-hidden">English</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="main-nav main-nav--closed">
@@ -71,6 +73,20 @@
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="services.html">Услуги</a>
+            <ul class="site-nav__sub sub-nav">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="">Разработка модели станка</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="">Внедрение</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="service.html">Поддержка</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="">Обучение</a>
+              </li>
+            </ul>
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="downloads.html">Загрузки</a>

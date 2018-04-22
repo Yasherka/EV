@@ -27,34 +27,34 @@
   };
 
   let openPopup = function () {
-    popup.classList.add("modal-animation");
-    overlay.classList.add("modal-show");
+    popup.classList.add('modal-animation');
+    overlay.classList.add('modal-show');
     document.addEventListener('keydown', onPopupEscPress);
   };
 
   let closePopup = function () {
-    popup.classList.remove("modal-animation");
-    overlay.classList.remove("modal-show");
+    popup.classList.remove('modal-animation');
+    overlay.classList.remove('modal-show');
     document.removeEventListener('keydown', onPopupEscPress);
   };
 
-  gallery.addEventListener("click", function (evt) {
+  gallery.addEventListener('click', function (evt) {
     let target = evt.target;
 
-    if (target && target.matches("div.ability__overlay")) {
+    if (target && target.matches('div.ability__overlay')) {
       let sourse = target.getElementsByTagName('img')[0].src;
       photo.setAttribute('src', sourse);
       openPopup();
     }
   });
 
-  close.addEventListener("click", function (evt) {
+  close.addEventListener('click', (evt) => {
     evt.preventDefault();
     closePopup();
   });
 
-  close.addEventListener('keydown', function (evt) {
-    isEneterEvent(evt, closePopup);
+  close.addEventListener('keydown', (evt) => {
+    isEnterEvent(evt, closePopup);
   });
 
 })();

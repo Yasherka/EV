@@ -5,9 +5,12 @@
   //открытие меню
   let burger = document.querySelector('.main-nav__burger');
   let mainNav = document.querySelector('.main-nav');
+  let header = document.querySelector('.page-header');
+
   burger.addEventListener('click', (evt) => {
     evt.preventDefault();
     mainNav.classList.toggle('main-nav--opened');
+    header.classList.toggle('page-header--fixed');
   });
 
   //открытие подменю

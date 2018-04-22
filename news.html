@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Eureka news</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__top">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 765px)" srcset="img/logo-fullscreen.png">
+            <img class="page-header__logo-img" src="img/logo-mobile.png" width="60" height="60" alt="Логотип магазина Eureca">
+          </picture>
+          <p class="page-header__info">Программное обеспечение<br> для машинного моделирования</p>
+        </a>
+        <div class="page-header__settings">
+          <div class="page-header__search search search--page">
+            <h2 class="visually-hidden">Поиск по сайту</h2>
+            <form class="search__form" action="" method="post">
+              <label class="search__label" for="head-search">
+                <input class="search__input" type="text" id="head-search" name="head-search" placeholder="Поиск">
+              </label>
+            </form>
+            <button class="btn btn--search" type="button">
+              <span class="visually-hidden">Поиск</span>
+              <img src="img/search.svg" alt="Loupe" width="25" height="25">
+            </button>
+          </div>
+          <ul class="page-header__lang-list">
+            <li class="page-header__lang page-header__lang--ru page-header__lang--active" tabindex="0">
+              <span class="visually-hidden">Русский</span>
+            </li>
+            <li class="page-header__lang page-header__lang--en" tabindex="0">
+              <span class="visually-hidden">English</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__burger" type="button"><span class="visually-hidden">Меню</span></button>
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item search search--site">
+            <h2 class="visually-hidden">Поиск по сайту</h2>
+            <form class="search__form" action="" method="post">
+              <label class="search__label" for="nav-search">
+                <input class="search__input" type="text" id="nav-search" name="nav-search" placeholder="Поиск">
+              </label>
+            </form>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">О компании</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="products.html">Продукты</a>
+            <ul class="site-nav__sub sub-nav">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="product-g.html">Eureka G-Code</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="">Eureka Robot</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="product-mobile.html">Eureka Mobile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="services.html">Услуги</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="downloads.html">Загрузки</a>
+          </li>
+        </ul>
+        <div class="main-nav__connect">
+          <a class="site-nav__link site-nav__link--red" href="contacts.html">Связаться с нами</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <section class="breadcrumbs">
+          <h1 class="breadcrumbs__title">Новости</h1>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная /</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Новости</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-page">
+          <h2 class="visually-hidden">Лента новостей</h2>
+          <p class="news-page__intro">Eureka поддерживает любой тип Kinematik и эмулирует точно все контроллеры ЧПУ без дополнительной настройки:Fanuc, Siemens, Heidenhain, Okuma, Mori Seiki, Mazak, Фидия, Селца, OSAI, Num и многое другое.Удаление материала в машинном моделировании 3D является в режиме реального времени на модели моделируемой. Проверяются ошибки, ускоренные перемещения, контакты / контакты и столкновения на готовой детали и зажимном устройстве.</p>
+
+          <ul class="news-page__list">
+            <li class="news-page__item">
+              <img class="news-page__img" src="img/functions_1.jpg" width="288" height="154" alt="Станок">
+              <div class="news-page__row">
+                <a class="news-page__title-link" href="service.html" >
+                  <h3 class="news-page__title">Поддержка EUREKA</h3>
+                </a>
+                <p class="news-page__date">02 марта 2018</p>
+                <p class="news-page__text">Позвольте нашим сервисным специалистам выполнять действия непосредственно на обслуживаемых компьютерах.<br>
+                С помощью Team Viewer вы предоставляете нашим сервисным специалистам прямое дистанционное обслуживание.<br>
+                Если еще нет, пожалуйста, скачайте последнюю версию TeamViewer здесь вниз и держать свой идентификатор и пароль готов.</p>
+                <a class="news-page__link promo-link" href="service.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="news-page__item">
+              <img class="news-page__img" src="img/joxi.jpg" width="288" height="154" alt="Станок">
+              <div class="news-page__row">
+                <a class="news-page__title-link" href="" >
+                  <h3 class="news-page__title">Удаленное обслуживание EUREKA</h3>
+                </a>
+                <p class="news-page__date">02 марта 2018</p>
+                <p class="news-page__text">Позвольте нашим сервисным специалистам выполнять действия непосредственно на обслуживаемых компьютерах.<br>
+                С помощью Team Viewer вы предоставляете нашим сервисным специалистам прямое дистанционное обслуживание.<br>
+                Если еще нет, пожалуйста, скачайте последнюю версию TeamViewer здесь вниз и держать свой идентификатор и пароль готов.</p>
+                <a class="news-page__link promo-link" href="product-g.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="news-page__item">
+              <img class="news-page__img" src="img/deskey.jpg" width="288" height="154" alt="Станок">
+              <div class="news-page__row">
+                <a class="news-page__title-link" href="" >
+                  <h3 class="news-page__title">Драйвер для ключей EUREKA</h3>
+                </a>
+                <p class="news-page__date">02 марта 2018</p>
+                <p class="news-page__text">Позвольте нашим сервисным специалистам выполнять действия непосредственно на обслуживаемых компьютерах.<br>
+                С помощью Team Viewer вы предоставляете нашим сервисным специалистам прямое дистанционное обслуживание.<br>
+                Если еще нет, пожалуйста, скачайте последнюю версию TeamViewer здесь вниз и держать свой идентификатор и пароль готов.</p>
+                <a class="news-page__link promo-link" href="product-g.html">Подробнее</a>
+              </div>
+            </li>
+            <li class="news-page__item">
+              <img class="news-page__img" src="img/functions_2.jpg" width="288" height="154" alt="Станок">
+              <div class="news-page__row">
+                <a class="news-page__title-link" href="" >
+                  <h3 class="news-page__title">Требования к системе EUREKA</h3>
+                </a>
+                <p class="news-page__date">02 марта 2018</p>
+                <p class="news-page__text">Позвольте нашим сервисным специалистам выполнять действия непосредственно на обслуживаемых компьютерах.<br>
+                С помощью Team Viewer вы предоставляете нашим сервисным специалистам прямое дистанционное обслуживание.<br>
+                Если еще нет, пожалуйста, скачайте последнюю версию TeamViewer здесь вниз и держать свой идентификатор и пароль готов.</p>
+                <a class="news-page__link promo-link" href="product-g.html">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <button class="pagination__btn pagination__btn--back pagination__btn--off" type="button">Назад</button>
+            </li>
+            <li class="pagination__item pagination__item--current">
+              <a class="pagination__link" href="#">1</a></li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__btn pagination__btn--next" type="button">Вперед</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__row">
+        <a class="page-footer__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-fullscreen.png">
+            <img class="page-footer__logo-img" src="img/logo-mobile.png" width="51" height="51" alt="Логотип магазина Eureca">
+          </picture>
+        </a>
+        <a href="https://www.youtube.com/channel/UCb4cbOZLRipwtcFUkUXK2yg" class="page-footer__logo">
+          <img src="img/youtube.svg"  width="86" height="19" alt="Канал на Youtube">
+        </a>
+      </div>
+      <div class="page-footer__row page-footer__row--bottom">
+        <p class="page-footer__copyright">Copyright © 2016 Roboris Srl - Via Firenze 8 - 56123 Pisa - Italy - P.I. 01566380505 - All rights reserved privacy |cookie policy |Credits</p>
+        <a class="page-footer__studio" href="">Создание сайта: <span>«Веб Гармония»</span></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+  </body>
+</html>

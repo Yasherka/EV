@@ -16,13 +16,19 @@
   //открытие подменю
   const WIDTH = 1420;
   let navLinks = document.querySelectorAll('.site-nav__link');
+navLinks.forEach(link => {
+    let screenWidth = document.body.clientWidth;
+
+    if (link.nextElementSibling && screenWidth < WIDTH) {
+      link.classList.add('site-nav__link--more');
+    }
+  });
 
   navLinks.forEach(link => {
     link.addEventListener('click', (evt) => {
-
       let screenWidth = document.body.clientWidth;
 
-      if (link.nextElementSibling && screenWidth < WIDTH) {
+      if (link.nextElementSibling && screenWidth < WIDTH && evt.offsetX > 170) {
         evt.preventDefault();
 
         let navItem = link.parentNode;

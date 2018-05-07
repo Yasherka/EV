@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -25,6 +25,9 @@
               <label class="search__label" for="head-search">
                 <input class="search__input" type="text" id="head-search" name="head-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
             <button class="btn btn--search" type="button">
               <span class="visually-hidden">Поиск</span>
@@ -52,6 +55,9 @@
               <label class="search__label" for="nav-search">
                 <input class="search__input" type="text" id="nav-search" name="nav-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
           </li>
           <li class="site-nav__item">
@@ -116,18 +122,22 @@
           <h2 class="visually-hidden">Наши продукты</h2>
             <ul class="promo__list promo__list--main">
               <li class="promo__item promo__item--main">
-                <h3 class="promo__title">Eureka G-Code</h3>
+                <h2 class="promo__title">Eureka G-Code</h2>
                 <p class="promo__headline">Повышение производительности и сокращение проблем с коллизией</p>
                 <p class="promo__info promo__info--main">Eureka выполняет полное 3D-моделирование станков через простой и интуитивно понятный графический интерфейс, начиная с G-кода.Eureka помогает избежать рисков повреждения дорогих деталей, разрывов инструментов и приспособлений или даже сбой машины с ЧПУ из-за ошибок программирования.
                 </p>
-                <iframe class="promo__video" width="290" height="165" src="https://www.youtube.com/embed/VIeSytczOgA?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="promo__video-wrapper">
+                  <iframe class="promo__video" width="560" height="315" src="https://www.youtube.com/embed/VIeSytczOgA?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <a class="promo__link promo-link" href="product-g.html">Подробнее</a>
               </li>
               <li class="promo__item promo__item--main">
-                <h3 class="promo__title">Eureka Robot</h3>
+                <h2 class="promo__title">Eureka Robot</h2>
                 <p class="promo__headline">Моделирование реального времени с миллионами движений</p>
                 <p class="promo__info promo__info--main">В течение многих лет Эврика руководит ареной приложений для роботизированного фрезерования. Eureka позволяет создавать модели и художественные объекты, сочетая гибкость промышленного робота с шестью осями и надежную технологию обрабатывающего центра с ЧПУ.</p>
-                <iframe class="promo__video" width="290" height="165" src="https://www.youtube.com/embed/s0wIyocJ-bY?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="promo__video-wrapper">
+                  <iframe class="promo__video" width="560" height="315" src="https://www.youtube.com/embed/s0wIyocJ-bY?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <a class="promo__link promo-link" href="">Подробнее</a>
               </li>
             </ul>

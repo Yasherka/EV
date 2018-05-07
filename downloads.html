@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -25,6 +25,9 @@
               <label class="search__label" for="head-search">
                 <input class="search__input" type="text" id="head-search" name="head-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
             <button class="btn btn--search" type="button">
               <span class="visually-hidden">Поиск</span>
@@ -52,6 +55,9 @@
               <label class="search__label" for="nav-search">
                 <input class="search__input" type="text" id="nav-search" name="nav-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
           </li>
           <li class="site-nav__item">
@@ -149,19 +155,27 @@
           <h3 class="downloads-video__title downloads__title">Видеоматериалы</h3>
           <ul class="downloads-video__list">
             <li class="downloads-video__item">
-              <iframe class="downloads-video__video" width="288" height="154" src="https://www.youtube.com/embed/cNz5dqPqTDs?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <a class="downloads-video__link" href="https://www.youtube.com/embed/cNz5dqPqTDs">
+                <img class="downloads-video__img" src="img/functions_1.jpg" width="288" height="154" alt="">
+              </a>
               <p class="downloads-video__text">Release notes for Eureka 8.5 - English</p>
             </li>
             <li class="downloads-video__item">
-              <iframe class="downloads-video__video" width="288" height="154" src="https://www.youtube.com/embed/cNz5dqPqTDs?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <a href="https://www.youtube.com/embed/cNz5dqPqTDs" class="downloads-video__link">
+                <img class="downloads-video__img" src="img/functions_2.jpg" width="288" height="154" alt="">
+              </a>
               <p class="downloads-video__text">Release notes for Eureka 8.5 - English</p>
             </li>
             <li class="downloads-video__item">
-              <iframe class="downloads-video__video" width="288" height="154" src="https://www.youtube.com/embed/cNz5dqPqTDs?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <a href="https://www.youtube.com/embed/cNz5dqPqTDs" class="downloads-video__link">
+                <img class="downloads-video__img" src="img/joxi.jpg" width="288" height="154" alt="">
+              </a>
               <p class="downloads-video__text">Release notes for Eureka 8.5 - English</p>
             </li>
             <li class="downloads-video__item">
-              <iframe class="downloads-video__video" width="288" height="154" src="https://www.youtube.com/embed/cNz5dqPqTDs?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <a href="https://www.youtube.com/embed/cNz5dqPqTDs" class="downloads-video__link">
+                <img class="downloads-video__img" src="img/functions_1.jpg" width="288" height="154" alt="">
+              </a>
               <p class="downloads-video__text">Release notes for Eureka 8.5 - English</p>
             </li>
           </ul>
@@ -170,13 +184,13 @@
 
       <section class="feedback">
         <div class="feedback__inner container">
-          <h2 class="feedback__title feedback__title--center">Связаться с нами</h2>
+          <h2 class="feedback__title feedback__title--center">Запросить DEMO</h2>
           <form class="feedback__form form" action="" method="post">
             <div class="form__column-big">
               <div class="form__column">
                 <label class="form__label" for="form-name">
                   <span class="form__input-name">Ваше имя:</span>
-                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя">
+                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя" required>
                 </label>
                 <label class="form__label" for="form-firm">
                   <span class="form__input-name">Организация:</span>
@@ -184,13 +198,13 @@
                 </label>
                 <label class="form__label" for="form-contact">
                   <span class="form__input-name">Email / Телефон:</span>
-                  <input class="form__input" type="text" id="form-contact" name="form-contact" placeholder="Введите email или телефон для обратной связи">
+                  <input class="form__input" type="text" id="form-contact" name="form-contact" placeholder="Введите email или телефон для обратной связи" required>
                 </label>
               </div>
               <div class="form__column">
                 <label class="form__label" for="form-text">
                   <span class="form__input-name">Сообщение:</span>
-                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение"></textarea>
+                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение" required></textarea>
                 </label>
                 <div class="form__row">
                   <div class="form__captcha">
@@ -199,7 +213,7 @@
                       <span class="visually-hidden">Обновить</span>
                     </button>
                   </div>
-                  <label class="form__label" for="form-captcha">
+                  <label class="form__label form__label--captcha" for="form-captcha">
                     <span class="visually-hidden">Введите код с картинки</span>
                     <input class="form__input form__input--captcha" type="text" id="form-captcha" name="form-captcha" placeholder="Введите код с картинки" required>
                   </label>
@@ -235,7 +249,19 @@
       </div>
     </footer>
 
+    <div class="page-overlay"></div>
+    <section class="modal">
+      <h2 class="visually-hidden">Просмотр фото</h2>
+      <div class="modal__inner">
+        <div class="modal__video-wrapper">
+          <iframe class="modal__video" id="v1" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
     <script src="js/script.js"></script>
+    <script src="js/video.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -25,6 +25,9 @@
               <label class="search__label" for="head-search">
                 <input class="search__input" type="text" id="head-search" name="head-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
             <button class="btn btn--search" type="button">
               <span class="visually-hidden">Поиск</span>
@@ -52,6 +55,9 @@
               <label class="search__label" for="nav-search">
                 <input class="search__input" type="text" id="nav-search" name="nav-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
           </li>
           <li class="site-nav__item">
@@ -132,13 +138,13 @@
 
       <section class="feedback">
         <div class="feedback__inner container">
-          <h2 class="feedback__title feedback__title--center">Связаться с нами</h2>
+          <h2 class="feedback__title feedback__title--center">Отправить запрос</h2>
           <form class="feedback__form form" action="" method="post">
             <div class="form__column-big">
               <div class="form__column">
                 <label class="form__label" for="form-name">
                   <span class="form__input-name">Ваше имя:</span>
-                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя">
+                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя" required>
                 </label>
                 <label class="form__label" for="form-firm">
                   <span class="form__input-name">Организация:</span>
@@ -146,13 +152,13 @@
                 </label>
                 <label class="form__label" for="form-contact">
                   <span class="form__input-name">Email / Телефон:</span>
-                  <input class="form__input" type="text" id="form-contact" name="form-contact" placeholder="Введите email или телефон для обратной связи">
+                  <input class="form__input" type="text" id="form-contact" name="form-contact" placeholder="Введите email или телефон для обратной связи" required>
                 </label>
               </div>
               <div class="form__column">
                 <label class="form__label" for="form-text">
                   <span class="form__input-name">Сообщение:</span>
-                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение"></textarea>
+                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение" required></textarea>
                 </label>
                 <div class="form__row">
                   <div class="form__captcha">
@@ -161,7 +167,7 @@
                       <span class="visually-hidden">Обновить</span>
                     </button>
                   </div>
-                  <label class="form__label" for="form-captcha">
+                  <label class="form__label form__label--captcha" for="form-captcha">
                     <span class="visually-hidden">Введите код с картинки</span>
                     <input class="form__input form__input--captcha" type="text" id="form-captcha" name="form-captcha" placeholder="Введите код с картинки" required>
                   </label>

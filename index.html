@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -25,6 +25,9 @@
               <label class="search__label" for="head-search">
                 <input class="search__input" type="text" id="head-search" name="head-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
             <button class="btn btn--search" type="button">
               <span class="visually-hidden">Поиск</span>
@@ -44,7 +47,7 @@
         </div>
       </div>
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__burger" type="button"><span class="visually-hidden">Меню</span></button>
+        <button class="main-nav__burger" type="button" tabindex="0"><span class="visually-hidden">Меню</span></button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item search search--site">
             <h2 class="visually-hidden">Поиск по сайту</h2>
@@ -52,6 +55,9 @@
               <label class="search__label" for="nav-search">
                 <input class="search__input" type="text" id="nav-search" name="nav-search" placeholder="Поиск">
               </label>
+              <button class="btn search__submit" type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
             </form>
           </li>
           <li class="site-nav__item">
@@ -99,7 +105,7 @@
     </header>
 
     <main class="page-content">
-      <h1 class="visually-hidden">Eureca</h1>
+      <h2 class="visually-hidden">Eureca</h2>
 
       <section class="intro">
         <div class="intro__video-inner">
@@ -109,12 +115,12 @@
             <source src="img/videoplayback.webm" type="video/webm">
           </video>
           <div class="intro__overlay">
-            <h3 class="intro__title">Откройте для себя Eureka 8</h3>
+            <p class="intro__title">Откройте для себя Eureka 8</p>
             <a href="products.html" class="btn btn--red btn--big">Подробнее</a>
           </div>
         </div>
         <div class="intro__info container">
-          <p class="intro__text intro__text--red">Программное обеспечение для машинного моделирования, моделирования ЧПУ и автономного программирования роботов</p>
+          <h1 class="intro__text intro__text--red">Программное обеспечение для машинного моделирования, моделирования ЧПУ и автономного программирования роботов</h1>
           <p class="intro__text">Eureka поддерживает любой тип K inematik и эмулирует точно все контроллеры ЧПУ без дополнительной настройки:Fanuc, Siemens, Heidenhain , Okuma, Mori Seiki , Mazak , Фидия , Селца , OSAI , Num и многое другое.Удаление материала в машинном моделировании 3D является в режиме реального времени на модели моделируемой . Проверяются ошибки, ускоренные перемещения, контакты / контакты и столкновения на готовой детали и зажимном устройстве.</p>
         </div>
       </section>
@@ -170,7 +176,9 @@
                 <p class="promo__headline">Повышение производительности и сокращение проблем с коллизией</p>
                 <p class="promo__info">Eureka выполняет полное 3D-моделирование станков через простой и интуитивно понятный графический интерфейс, начиная с G-кода.Eureka помогает избежать рисков повреждения дорогих деталей, разрывов инструментов и приспособлений или даже сбой машины с ЧПУ из-за ошибок программирования.
                 </p>
-                <iframe class="promo__video" width="290" height="165" src="https://www.youtube.com/embed/VIeSytczOgA?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="promo__video-wrapper">
+                  <iframe class="promo__video" width="560" height="315" src="https://www.youtube.com/embed/VIeSytczOgA?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <a class="promo__link promo-link" href="product-g.html">Подробнее</a>
               </div>
             </li>
@@ -179,7 +187,9 @@
                 <h3 class="promo__title">Eureka Robot</h3>
                 <p class="promo__headline">Моделирование реального времени с миллионами движений</p>
                 <p class="promo__info">В течение многих лет Эврика руководит ареной приложений для роботизированного фрезерования. Eureka позволяет создавать модели и художественные объекты, сочетая гибкость промышленного робота с шестью осями и надежную технологию обрабатывающего центра с ЧПУ.</p>
-                <iframe class="promo__video" width="290" height="165" src="https://www.youtube.com/embed/s0wIyocJ-bY?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="promo__video-wrapper">
+                  <iframe class="promo__video" width="1200" height="675" src="https://www.youtube.com/embed/s0wIyocJ-bY?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <a class="promo__link promo-link" href="">Подробнее</a>
               </div>
             </li>
@@ -194,11 +204,11 @@
               <div class="form__column">
                 <label class="form__label" for="form-name">
                   <span class="form__input-name">Ваше имя:</span>
-                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя">
+                  <input class="form__input" type="text" id="form-name" name="form-name" placeholder="Введите имя" required>
                 </label>
                 <label class="form__label" for="form-firm">
                   <span class="form__input-name">Организация:</span>
-                  <input class="form__input" type="text" id="form-firm" name="form-firm" placeholder="Введите название вашей организации">
+                  <input class="form__input" type="text" id="form-firm" name="form-firm" placeholder="Введите название вашей организации" required>
                 </label>
                 <label class="form__label" for="form-contact">
                   <span class="form__input-name">Email / Телефон:</span>
@@ -208,7 +218,7 @@
               <div class="form__column">
                 <label class="form__label" for="form-text">
                   <span class="form__input-name">Сообщение:</span>
-                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение"></textarea>
+                  <textarea class="form__input form__input--area" id="form-text" name="form-text" placeholder="Введите ваше сообщение" required></textarea>
                 </label>
                 <div class="form__row">
                   <div class="form__captcha">
@@ -217,7 +227,7 @@
                       <span class="visually-hidden">Обновить</span>
                     </button>
                   </div>
-                  <label class="form__label" for="form-captcha">
+                  <label class="form__label form__label--captcha" for="form-captcha">
                     <span class="visually-hidden">Введите код с картинки</span>
                     <input class="form__input form__input--captcha"  type="text" id="form-captcha" name="form-captcha" placeholder="Введите код с картинки" required>
                   </label>
